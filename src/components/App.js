@@ -1,14 +1,14 @@
-import "../styleSheets/App.scss";
-import React from "react";
+import React, { useState, useEffect } from "react";
+import apiCall from "../services/api";
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const App = () => {
+  const [characterData, setCharacterData] = useState([]);
 
-  render() {
-    return <div className="App">Hola</div>;
-  }
-}
+  //Api
+  useEffect(() => {
+    apiCall().then((data) => setCharacterData(data.results));
+  }, []);
+  return <p>{console.log(characterData)}</p>;
+};
 
 export default App;
