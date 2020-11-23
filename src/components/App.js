@@ -4,6 +4,7 @@ import apiCall from "../services/api";
 import CharacterList from "./CharacterList/CharacterList";
 import Filters from "./Filters/Filters";
 import CharacterDetail from "./CharacterDetail/CharacterDetail";
+import Header from "./Header/Header";
 
 const App = () => {
   const [characterData, setCharacterData] = useState([]);
@@ -46,6 +47,7 @@ const App = () => {
   };
   return (
     <>
+      <Header />
       <Filters
         handleFilterInput={handleFilterInput}
         filterValue={filterValue}
