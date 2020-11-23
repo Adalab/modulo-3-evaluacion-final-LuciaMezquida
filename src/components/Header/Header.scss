@@ -1,0 +1,59 @@
+.header {
+  background-image: url(../../images/background-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  &__rick {
+    display: none;
+    @media all and (min-width: 770px) {
+      display: inline-block;
+      height: 10vh;
+      margin: 10px 30px 0 0;
+      animation: turn 3s linear infinite reverse;
+    }
+    @media all and (min-width: 1024px) {
+      height: 12vh;
+    }
+    @media all and (min-width: 1200px) {
+      height: 16vh;
+    }
+  }
+  &__logo {
+    height: 7vh;
+    @media all and (min-width: 770px) {
+      height: 9vh;
+    }
+    @media all and (min-width: 1024px) {
+      height: 11vh;
+    }
+    @media all and (min-width: 1200px) {
+      height: 14vh;
+    }
+  }
+  &__morty {
+    display: none;
+    @media all and (min-width: 770px) {
+      display: inline-block;
+      height: 9vh;
+      margin: 10px 0 0 30px;
+      animation: turn 3s linear infinite;
+    }
+    @media all and (min-width: 1024px) {
+      height: 11vh;
+    }
+    @media all and (min-width: 1200px) {
+      height: 14vh;
+    }
+  }
+}
+//Animation
+@keyframes turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

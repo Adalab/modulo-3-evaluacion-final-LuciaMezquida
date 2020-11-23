@@ -1,6 +1,7 @@
 import rick from "../../images/rick-sanchez.png";
 import morty from "../../images/morty.png";
 import logo from "../../images/logo.png";
+import "./Header.scss";
 
 const Header = () => {
   return (

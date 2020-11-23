@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
+import "../styleSheets/App.scss";
 import apiCall from "../services/api";
 import CharacterList from "./CharacterList/CharacterList";
 import Filters from "./Filters/Filters";
