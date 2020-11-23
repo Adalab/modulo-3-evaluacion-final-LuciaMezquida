@@ -1,4 +1,4 @@
-import "../styleSheets/App.css";
+import "../styleSheets/App.scss";
 import React from "react";
 
 class App extends React.Component {
