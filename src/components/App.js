@@ -5,7 +5,7 @@ import Filters from "./Filters/Filters";
 
 const App = () => {
   const [characterData, setCharacterData] = useState([]);
-  const [filterValue, setFilterValue] = useState();
+  const [filterValue, setFilterValue] = useState("");
 
   //Api
   useEffect(() => {

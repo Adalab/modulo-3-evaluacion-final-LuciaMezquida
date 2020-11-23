@@ -4,8 +4,9 @@ const Filters = (props) => {
   const handleFilterInput = (ev) => {
     props.handleFilterInput(ev.currentTarget.value);
   };
+  const handleFormSubmit = (ev) => ev.preventDefault();
   return (
-    <form className="filters">
+    <form className="filters" onSubmit={handleFormSubmit}>
       <label htmlFor="search" className="filters__title">
         Who are you looking for?
       </label>
@@ -20,5 +21,8 @@ const Filters = (props) => {
     </form>
   );
 };
-Filters.propTypes = {};
+Filters.propTypes = {
+  handleFilterInput: PropTypes.func.isRequired,
+  filterValue: PropTypes.string.isRequired,
+};
 export default Filters;
