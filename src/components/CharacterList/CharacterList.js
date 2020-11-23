@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import CharacterCard from "../CharacterCard/CharacterCard";
 import rickImage from "../../images/ups-image.png";
+import "./CharacterList.scss";
 const CharacterList = (props) => {
   const characterList = !props.characterData.length ? (
     <div className="character-list__container">
