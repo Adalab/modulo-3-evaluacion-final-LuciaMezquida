@@ -3,6 +3,18 @@ import { Link } from "react-router-dom";
 import ship from "../../images/ship.png";
 
 const CharacterDetail = (props) => {
+  const status =
+    props.status === "Dead"
+      ? "☠️"
+      : props.status === "unknown"
+      ? "🤷🏻‍♀️"
+      : props.status;
+  const species =
+    props.species === "Alien"
+      ? "👽"
+      : props.species === "Human"
+      ? "🧍🏻‍♀️"
+      : props.species;
   return (
     <section className="character-detail">
       <article className="character-detail__card">
@@ -13,12 +25,8 @@ const CharacterDetail = (props) => {
         />
         <div className="character-detail__card--description">
           <h2 className="character-detail__card--name">Name: {props.name}</h2>
-          <p className="character-detail__card--status">
-            Status: {props.status}
-          </p>
-          <p className="character-detail__card--species">
-            Species: {props.species}
-          </p>
+          <p className="character-detail__card--status">Status: {status}</p>
+          <p className="character-detail__card--species">Species: {species}</p>
           <p className="character-detail__card--origin">
             Origin: {props.origin}
           </p>
