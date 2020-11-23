@@ -4,6 +4,7 @@ const CharacterList = (props) => {
   const characterList = props.characterData.map((item) => (
     <li key={item.id}>
       <CharacterCard
+        id={item.id}
         image={item.image}
         name={item.name}
         species={item.species}

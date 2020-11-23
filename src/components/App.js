@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { Route, Switch } from "react-router-dom";
 import apiCall from "../services/api";
 import CharacterList from "./CharacterList/CharacterList";
 import Filters from "./Filters/Filters";
+import CharacterDetail from "./CharacterDetail/CharacterDetail";
 
 const App = () => {
   const [characterData, setCharacterData] = useState([]);
@@ -24,13 +26,36 @@ const App = () => {
     );
     return filteredCharacters;
   };
+  const renderCharacterDetail = (props) => {
+    const characterDetailId = parseInt(props.match.params.id);
+    const characterDetail = characterData.find(
+      (item) => item.id === characterDetailId
+    );
+    if (characterDetail) {
+      return (
+        <CharacterDetail
+          image={characterDetail.image}
+          name={characterDetail.name}
+          status={characterDetail.status}
+          species={characterDetail.species}
+          origin={characterDetail.origin.name}
+          episodes={characterDetail.episode.length}
+        />
+      );
+    }
+  };
   return (
     <>
       <Filters
         handleFilterInput={handleFilterInput}
         filterValue={filterValue}
       />
-      <CharacterList characterData={renderFilteredCharacters()} />
+      <Switch>
+        <Route strict path="/">
+          <CharacterList characterData={renderFilteredCharacters()} />
+        </Route>
+        <Route path="/card/:id" render={renderCharacterDetail} />
+      </Switch>
     </>
   );
 };

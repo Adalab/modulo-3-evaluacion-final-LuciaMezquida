@@ -1,26 +1,33 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import ship from "../../images/ship.png";
 
 const CharacterDetail = (props) => {
   return (
     <section className="character-detail">
       <article className="character-detail__card">
-        <img src="" alt="" className="character-detail__card--image" />
+        <img
+          src={props.image}
+          alt={props.name}
+          className="character-detail__card--image"
+        />
         <div className="character-detail__card--description">
-          <h2 className="character-detail__card--name"></h2>
-          <p className="character-detail__card--status"></p>
-          <p className="character-detail__card--species"></p>
-          <p className="character-detail__card--origin"></p>
-          <p className="character-detail__card--episodes"></p>
+          <h2 className="character-detail__card--name">{props.name}</h2>
+          <p className="character-detail__card--status">{props.status}</p>
+          <p className="character-detail__card--species">{props.species}</p>
+          <p className="character-detail__card--origin">{props.origin}</p>
+          <p className="character-detail__card--episodes">{props.episodes}</p>
         </div>
       </article>
       <div className="character-detail__back">
-        <button
-          className="character-detail__card--button"
-          title="Back to landing"
-        >
-          Back
-        </button>
+        <Link className="link" to="/">
+          <button
+            className="character-detail__card--button"
+            title="Back to landing"
+          >
+            Back
+          </button>
+        </Link>
         <img
           src={ship}
           alt="Spaceship"
@@ -30,5 +37,12 @@ const CharacterDetail = (props) => {
     </section>
   );
 };
-CharacterDetail.propTypes = {};
+CharacterDetail.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  status: PropTypes.string.isRequired,
+  species: PropTypes.string.isRequired,
+  origin: PropTypes.string.isRequired,
+  episodes: PropTypes.number.isRequired,
+};
 export default CharacterDetail;
