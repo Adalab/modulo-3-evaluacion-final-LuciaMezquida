@@ -12,11 +12,19 @@ const CharacterDetail = (props) => {
           className="character-detail__card--image"
         />
         <div className="character-detail__card--description">
-          <h2 className="character-detail__card--name">{props.name}</h2>
-          <p className="character-detail__card--status">{props.status}</p>
-          <p className="character-detail__card--species">{props.species}</p>
-          <p className="character-detail__card--origin">{props.origin}</p>
-          <p className="character-detail__card--episodes">{props.episodes}</p>
+          <h2 className="character-detail__card--name">Name: {props.name}</h2>
+          <p className="character-detail__card--status">
+            Status: {props.status}
+          </p>
+          <p className="character-detail__card--species">
+            Species: {props.species}
+          </p>
+          <p className="character-detail__card--origin">
+            Origin: {props.origin}
+          </p>
+          <p className="character-detail__card--episodes">
+            Episodes: {props.episodes}
+          </p>
         </div>
       </article>
       <div className="character-detail__back">

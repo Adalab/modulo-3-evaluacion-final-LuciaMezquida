@@ -51,10 +51,13 @@ const App = () => {
         filterValue={filterValue}
       />
       <Switch>
-        <Route strict path="/">
-          <CharacterList characterData={renderFilteredCharacters()} />
+        <Route exact path="/">
+          <CharacterList
+            characterData={renderFilteredCharacters()}
+            filterValue={filterValue}
+          />
         </Route>
-        <Route path="/card/:id" render={renderCharacterDetail} />
+        <Route path="/character/:id" render={renderCharacterDetail} />
       </Switch>
     </>
   );
