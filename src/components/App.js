@@ -80,6 +80,7 @@ const App = () => {
         handleFilterInput={handleFilterInput}
         filterValue={filterValue}
         handleSortInput={handleSortInput}
+        sortValue={sortValue}
       />
       <Switch>
         <Route exact path="/">

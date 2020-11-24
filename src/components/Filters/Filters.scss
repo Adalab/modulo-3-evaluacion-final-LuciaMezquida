@@ -43,6 +43,7 @@
     }
   }
   &__check {
+    opacity: 0;
     transform: translate(16px, 1px);
   }
   &__fake-check {
@@ -54,4 +55,7 @@
     height: 20px;
     border-radius: 50%;
   }
+}
+.checked {
+  background-color: $color-checkbox;
 }

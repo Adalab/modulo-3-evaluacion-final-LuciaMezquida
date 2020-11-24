@@ -31,7 +31,9 @@ const Filters = (props) => {
           id="sort"
           className="filters__check"
         />
-        <span className="filters__fake-check"></span>
+        <span
+          className={`filters__fake-check ${props.sortValue ? "checked" : ""}`}
+        ></span>
         Sort by name
       </label>
     </form>
@@ -41,5 +43,6 @@ Filters.propTypes = {
   handleFilterInput: PropTypes.func.isRequired,
   filterValue: PropTypes.string.isRequired,
   handleSortInput: PropTypes.func.isRequired,
+  sortValue: PropTypes.bool.isRequired,
 };
 export default Filters;
