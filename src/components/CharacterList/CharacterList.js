@@ -4,13 +4,13 @@ import rickImage from "../../images/ups-image.png";
 import "./CharacterList.scss";
 const CharacterList = (props) => {
   const characterList = !props.characterData.length ? (
-    <div className="character-list__container">
-      <h2 className="character-list__container--message">
+    <div className="list-container">
+      <h2 className="list-container__message">
         No character matches the word:
       </h2>
-      <p className="character-list__container--message">{props.filterValue}</p>
+      <p className="list-container__message">{props.filterValue}</p>
       <img
-        className="character-list__container--image"
+        className="list-container__image"
         src={rickImage}
         alt="Rick and Morty"
       />
