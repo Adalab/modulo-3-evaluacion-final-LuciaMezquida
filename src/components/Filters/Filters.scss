@@ -1,0 +1,57 @@
+@import "../../styleSheets/variables.scss";
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  color: $color-secondary;
+  font-family: $font-primary;
+  @media all and (min-width: 768px) {
+    padding: 30px 0;
+    flex-direction: row;
+  }
+  @media all and (min-width: 1024px) {
+    padding: 40px 0;
+  }
+  &__title {
+    font-size: 20px;
+    @media all and (min-width: 768px) {
+      margin: -4px 7px 0 0;
+    }
+    @media all and (min-width: 1024px) {
+      font-size: 25px;
+    }
+  }
+  &__input {
+    width: 250px;
+    height: 3vh;
+    border: 2px solid $color-primary;
+    border-radius: 20px;
+    font-family: $font-primary;
+    font-size: 16px;
+    padding-left: 10px;
+    background: transparent;
+    color: $color-secondary;
+    outline: none;
+  }
+  &__sort {
+    color: $color-checkbox;
+    @media all and (min-width: 768px) {
+      margin-top: -6px;
+    }
+  }
+  &__check {
+    transform: translate(16px, 1px);
+  }
+  &__fake-check {
+    transform: translate(0, 4px);
+    margin: 5px 5px 0 0;
+    border: 2px solid $color-checkbox;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+}

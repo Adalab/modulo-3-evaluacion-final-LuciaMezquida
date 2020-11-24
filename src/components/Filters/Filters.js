@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./Filters.scss";
 
 const Filters = (props) => {
   const handleFilterInput = (ev) => {
@@ -30,6 +31,7 @@ const Filters = (props) => {
           id="sort"
           className="filters__check"
         />
+        <span className="filters__fake-check"></span>
         Sort by name
       </label>
     </form>
