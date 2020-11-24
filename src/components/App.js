@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 import "../styleSheets/App.scss";
 import apiCall from "../services/api";
+import pickle from "../images/pickle-rick.png";
 import CharacterList from "./CharacterList/CharacterList";
 import Filters from "./Filters/Filters";
 import CharacterDetail from "./CharacterDetail/CharacterDetail";
@@ -10,6 +11,7 @@ import Header from "./Header/Header";
 const App = () => {
   const [characterData, setCharacterData] = useState([]);
   const [filterValue, setFilterValue] = useState("");
+  const [sortValue, setSortValue] = useState(false);
 
   //Api
   useEffect(() => {
@@ -20,12 +22,27 @@ const App = () => {
   const handleFilterInput = (value) => {
     setFilterValue(value);
   };
+  const handleSortInput = (check) => {
+    setSortValue(check);
+  };
 
   //Render
   const renderFilteredCharacters = () => {
     const filteredCharacters = characterData.filter((item) =>
       item.name.toLowerCase().includes(filterValue.toLowerCase())
     );
+    if (sortValue) {
+      //https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/sort
+      filteredCharacters.sort((prev, next) => {
+        if (prev.name.toLowerCase() > next.name.toLowerCase()) {
+          return 1;
+        }
+        if (prev.name.toLowerCase() < next.name.toLowerCase()) {
+          return -1;
+        }
+        return 0;
+      });
+    }
     return filteredCharacters;
   };
   const renderCharacterDetail = (props) => {
@@ -52,6 +69,7 @@ const App = () => {
       <Filters
         handleFilterInput={handleFilterInput}
         filterValue={filterValue}
+        handleSortInput={handleSortInput}
       />
       <Switch>
         <Route exact path="/">

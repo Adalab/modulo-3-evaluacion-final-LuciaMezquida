@@ -5,7 +5,7 @@ import ship from "../../images/ship.png";
 const CharacterDetail = (props) => {
   const status =
     props.status === "Dead"
-      ? "☠️"
+      ? "🪦"
       : props.status === "unknown"
       ? "🤷🏻‍♀️"
       : props.status;
