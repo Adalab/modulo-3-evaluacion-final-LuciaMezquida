@@ -21,7 +21,7 @@ const Filters = (props) => {
         id="search"
         value={props.filterValue}
         className="filters__input"
-        placeholder="Pickle Rick"
+        placeholder="Ex: Pickle Rick"
       />
       <label htmlFor="sort" className="filters__sort">
         <input

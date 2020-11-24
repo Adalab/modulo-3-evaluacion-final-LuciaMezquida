@@ -1,0 +1,44 @@
+@import "../../styleSheets/variables.scss";
+.link {
+  text-decoration: none;
+}
+.character-card {
+  margin: 10px;
+  width: 70%;
+  border: 3px solid $color-checkbox;
+  margin: auto;
+  border-radius: 70px 0;
+  &__image {
+    width: 100%;
+    border-radius: 68px 0;
+  }
+  &__text {
+    height: 15vh;
+    text-align: center;
+    color: $color-secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    font-family: $font-primary;
+    line-height: 20px;
+    &--species {
+      display: flex;
+      border: 2px solid $color-secondary;
+      border-radius: 20px;
+      padding: 3px 20px;
+    }
+    &--species-icon {
+      background-color: $color-checkbox;
+      color: $color-secondary;
+      font-size: 30px;
+      border: 2px solid $color-secondary;
+      border-radius: 50%;
+      transform: translate(46px, 32px);
+    }
+  }
+  &:hover {
+    box-shadow: 1px 2px 15px 8px rgba(93, 236, 93, 0.9);
+  }
+}
