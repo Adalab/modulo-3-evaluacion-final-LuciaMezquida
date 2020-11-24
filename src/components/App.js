@@ -76,14 +76,14 @@ const App = () => {
   return (
     <>
       <Header />
-      <Filters
-        handleFilterInput={handleFilterInput}
-        filterValue={filterValue}
-        handleSortInput={handleSortInput}
-        sortValue={sortValue}
-      />
       <Switch>
         <Route exact path="/">
+          <Filters
+            handleFilterInput={handleFilterInput}
+            filterValue={filterValue}
+            handleSortInput={handleSortInput}
+            sortValue={sortValue}
+          />
           <CharacterList
             characterData={renderFilteredCharacters()}
             filterValue={filterValue}

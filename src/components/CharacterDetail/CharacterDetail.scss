@@ -1,0 +1,71 @@
+@import "../../styleSheets/variables.scss";
+
+.container {
+  background-image: url(../../images/background-5.jpg);
+  height: 100vh;
+}
+.character-detail {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+
+  &__card {
+    background-color: $color-tertiary;
+    border-radius: 50px 0;
+    @media all and (min-width: 768px) {
+      display: flex;
+      width: 600px;
+      margin-top: 7%;
+    }
+    &--image {
+      border-radius: 50px 0 0 0;
+    }
+    &--description {
+      color: $color-secondary;
+      font-family: $font-secondary;
+      font-size: 20px;
+      line-height: 25px;
+      padding: 10px;
+      @media all and (min-width: 768px) {
+        padding: 60px 20px;
+        line-height: 35px;
+      }
+    }
+  }
+  &__back {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    &--ship {
+      height: 8vh;
+      animation: move 4s infinite;
+    }
+    &--button {
+      margin: 15px 30px 0 0;
+      padding: 10px 20px;
+      background-color: $color-primary;
+      border: none;
+      color: white;
+      font-family: $font-primary;
+      font-size: 20px;
+      border-radius: 5px;
+      outline: none;
+      &:hover {
+        box-shadow: 1px 2px 15px 8px rgba(93, 236, 93, 0.9);
+      }
+    }
+  }
+}
+
+//Animation
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

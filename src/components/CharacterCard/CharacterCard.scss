@@ -5,7 +5,7 @@
 .character-card {
   margin: 10px;
   width: 70%;
-  border: 3px solid $color-checkbox;
+  border: 3px solid $color-primary;
   margin: auto;
   border-radius: 70px 0;
   &__image {
@@ -30,7 +30,7 @@
       padding: 3px 20px;
     }
     &--species-icon {
-      background-color: $color-checkbox;
+      background-color: $color-primary;
       color: $color-secondary;
       font-size: 30px;
       border: 2px solid $color-secondary;
