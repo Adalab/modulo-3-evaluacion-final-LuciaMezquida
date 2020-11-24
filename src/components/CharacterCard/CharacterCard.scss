@@ -7,10 +7,10 @@
   width: 70%;
   border: 3px solid $color-primary;
   margin: auto;
-  border-radius: 70px 0;
+  border-radius: 0 70px;
   &__image {
     width: 100%;
-    border-radius: 68px 0;
+    border-radius: 0 68px;
   }
   &__text {
     height: 15vh;

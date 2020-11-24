@@ -7,15 +7,21 @@ import CharacterList from "./CharacterList/CharacterList";
 import Filters from "./Filters/Filters";
 import CharacterDetail from "./CharacterDetail/CharacterDetail";
 import Header from "./Header/Header";
+import Loader from "./Loader/Loader";
 
 const App = () => {
   const [characterData, setCharacterData] = useState([]);
   const [filterValue, setFilterValue] = useState("");
   const [sortValue, setSortValue] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   //Api
   useEffect(() => {
-    apiCall().then((data) => setCharacterData(data.results));
+    setIsLoading(true);
+    apiCall().then((data) => {
+      setCharacterData(data.results);
+      setIsLoading(false);
+    });
   }, []);
 
   //Events
@@ -73,9 +79,11 @@ const App = () => {
       );
     }
   };
+
   return (
     <>
       <Header />
+
       <Switch>
         <Route exact path="/">
           <Filters
@@ -84,9 +92,11 @@ const App = () => {
             handleSortInput={handleSortInput}
             sortValue={sortValue}
           />
+          {isLoading ? <Loader /> : null}
           <CharacterList
             characterData={renderFilteredCharacters()}
             filterValue={filterValue}
+            isLoading={isLoading}
           />
         </Route>
         <Route path="/character/:id" render={renderCharacterDetail} />
