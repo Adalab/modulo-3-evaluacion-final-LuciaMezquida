@@ -32,7 +32,9 @@ const Filters = (props) => {
           className="filters__check"
         />
         <span
-          className={`filters__fake-check ${props.sortValue ? "checked" : ""}`}
+          className={`filters__custom-check ${
+            props.sortValue ? "checked" : ""
+          }`}
         ></span>
         Sort by name
       </label>

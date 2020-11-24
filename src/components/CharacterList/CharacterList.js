@@ -17,7 +17,7 @@ const CharacterList = (props) => {
     </div>
   ) : (
     props.characterData.map((item) => (
-      <li key={item.id}>
+      <li className="list" key={item.id}>
         <CharacterCard
           id={item.id}
           image={item.image}
@@ -27,7 +27,11 @@ const CharacterList = (props) => {
       </li>
     ))
   );
-  return <ul className="character-list">{characterList}</ul>;
+  return (
+    <main className="main">
+      <ul className="main__character-list">{characterList}</ul>;
+    </main>
+  );
 };
 CharacterList.propTypes = {
   characterData: PropTypes.array.isRequired,
