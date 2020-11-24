@@ -61,6 +61,16 @@ const App = () => {
           episodes={characterDetail.episode.length}
         />
       );
+    } else {
+      return (
+        <section className="not-found">
+          <h2 className="not-found__title">Character not found</h2>
+          <Link className="link" to="/">
+            <span>Back to finder</span>
+          </Link>
+          <img src={pickle} alt="Pickle Rick" className="not-found__image" />
+        </section>
+      );
     }
   };
   return (
