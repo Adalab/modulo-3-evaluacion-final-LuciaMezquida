@@ -14,7 +14,7 @@
     border-radius: 50px 0;
     @media all and (min-width: 768px) {
       display: flex;
-      width: 600px;
+      width: 700px;
       margin-top: 7%;
     }
     &--image {
@@ -28,7 +28,7 @@
       padding: 10px;
       @media all and (min-width: 768px) {
         padding: 60px 20px;
-        line-height: 35px;
+        line-height: 40px;
       }
     }
   }

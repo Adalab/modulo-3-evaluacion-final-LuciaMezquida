@@ -5,17 +5,21 @@ import "./CharacterDetail.scss";
 
 const CharacterDetail = (props) => {
   const status =
-    props.status === "Dead"
-      ? "🪦"
-      : props.status === "unknown"
-      ? "🤷🏻‍♀️"
-      : props.status;
+    props.status === "Dead" ? (
+      <img src="https://img.icons8.com/cotton/25/000000/headstone--v1.png" />
+    ) : props.status === "unknown" ? (
+      <img src="https://img.icons8.com/dotty/25/000000/question-mark.png" />
+    ) : (
+      props.status
+    );
   const species =
-    props.species === "Alien"
-      ? "👽"
-      : props.species === "Human"
-      ? "🧍🏻‍♀️"
-      : props.species;
+    props.species === "Alien" ? (
+      <img src="https://img.icons8.com/ios-filled/25/000000/alien.png" />
+    ) : props.species === "Human" ? (
+      <img src="https://img.icons8.com/ios/25/000000/da-vinci.png" />
+    ) : (
+      props.species
+    );
   return (
     <section className="container">
       <div className="character-detail">
