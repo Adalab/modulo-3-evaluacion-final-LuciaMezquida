@@ -14,18 +14,20 @@ body {
   text-decoration: none;
 }
 .not-found {
-  height: 100vh;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   &__title {
-    margin-top: 20px;
+    margin-top: 8%;
     color: $color-secondary;
     font-size: 30px;
     font-family: $font-primary;
     @media all and (min-width: 768px) {
       font-size: 40px;
-      margin-top: 40px;
+    }
+    @media all and (min-width: 1024px) {
+      font-size: 50px;
     }
   }
   &__link {

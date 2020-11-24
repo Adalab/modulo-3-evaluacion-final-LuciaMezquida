@@ -2,7 +2,16 @@
 
 .container {
   background-image: url(../../images/background-5.jpg);
-  height: 100vh;
+  height: 91vh;
+  @media all and (min-width: 768px) {
+    height: 88vh;
+  }
+  @media all and (min-width: 1024px) {
+    height: 85vh;
+  }
+  @media all and (min-width: 1200px) {
+    height: 82vh;
+  }
 }
 .character-detail {
   padding-top: 30px;
@@ -10,23 +19,26 @@
   justify-content: center;
 
   &__card {
-    background-color: $color-tertiary;
+    background-color: rgb(55, 168, 55);
     border-radius: 50px 0;
     @media all and (min-width: 768px) {
       display: flex;
-      width: 700px;
+      width: 818px;
       margin-top: 7%;
     }
     &--image {
       border-radius: 50px 0 0 0;
     }
     &--description {
+      width: 300px;
       color: $color-secondary;
       font-family: $font-secondary;
       font-size: 20px;
-      line-height: 25px;
+      line-height: 40px;
       padding: 10px;
       @media all and (min-width: 768px) {
+        width: 100%;
+        font-size: 24px;
         padding: 60px 20px;
         line-height: 40px;
       }

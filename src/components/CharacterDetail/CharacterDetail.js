@@ -30,16 +30,16 @@ const CharacterDetail = (props) => {
             className="character-detail__card--image"
           />
           <div className="character-detail__card--description">
-            <p className="character-detail__card--name">Name: {props.name}</p>
-            <p className="character-detail__card--status">Status: {status}</p>
+            <p className="character-detail__card--name">NAME: {props.name}</p>
+            <p className="character-detail__card--status">STATUS: {status}</p>
             <p className="character-detail__card--species">
-              Species: {species}
+              SPECIES: {species}
             </p>
             <p className="character-detail__card--origin">
-              Origin: {props.origin}
+              ORIGIN: {props.origin}
             </p>
             <p className="character-detail__card--episodes">
-              Episodes: {props.episodes}
+              EPISODES: {props.episodes}
             </p>
           </div>
         </article>

@@ -12,7 +12,7 @@ const CharacterCard = (props) => {
       ""
     );
   return (
-    <Link className="link" to={`/character/${props.id}`}>
+    <Link title={props.name} className="link" to={`/character/${props.id}`}>
       <article className="character-card">
         <img
           className="character-card__image"
