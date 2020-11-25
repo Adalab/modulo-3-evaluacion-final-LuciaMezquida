@@ -3,7 +3,13 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <footer className="footer">
-      <small className="footer__text">Made by Lucia Mezquida</small>
+      <small className="footer__text">
+        Made with{" "}
+        <span>
+          <i class="fas fa-grin-tears"></i>
+        </span>{" "}
+        by Lucia Mezquida
+      </small>
       <a
         href="https://github.com/LuciaMezquida"
         className="footer__github"
