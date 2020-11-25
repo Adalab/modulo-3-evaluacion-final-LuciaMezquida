@@ -53,6 +53,11 @@ src
 
 ~~~
 
+## La Web
+
+![Landing](https://imgur.com/Ix0uNM0)
+![CharacterDetail](https://imgur.com/7PzrgLz)
+
 ## Arrancar el proyecto
 
 ### `npm install`
