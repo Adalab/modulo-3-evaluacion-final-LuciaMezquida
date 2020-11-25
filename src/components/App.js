@@ -8,6 +8,7 @@ import CharacterDetail from "./CharacterDetail/CharacterDetail";
 import Header from "./Header/Header";
 import Loader from "./Loader/Loader";
 import NotFound from "./NotFound/NotFound";
+import Footer from "./Footer/Footer";
 
 const App = () => {
   const [characterData, setCharacterData] = useState([]);
@@ -92,6 +93,7 @@ const App = () => {
         </Route>
         <Route path="/character/:id" render={renderCharacterDetail} />
       </Switch>
+      <Footer />
     </>
   );
 };

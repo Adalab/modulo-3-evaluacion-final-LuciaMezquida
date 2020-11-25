@@ -1,0 +1,29 @@
+@import "../../styleSheets/variables.scss";
+
+.footer {
+  margin: 20px 0;
+  text-align: center;
+  &__text {
+    margin-right: 5px;
+    color: $color-secondary;
+    font-family: $font-secondary;
+  }
+  &__github {
+    padding: 5px;
+    &--icon {
+      color: $color-secondary;
+    }
+  }
+  &__twitter {
+    padding: 5px;
+    &--icon {
+      color: $color-secondary;
+    }
+  }
+  &__linkedin {
+    padding: 5px;
+    &--icon {
+      color: $color-secondary;
+    }
+  }
+}
