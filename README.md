@@ -25,6 +25,9 @@ src
 │   ├── Filters --> (renderiza los campos de filtrado por nombre y el de ordenación de nombre por orden alfabético)
 │   │   ├── Filters.js
 │   │   └── Filters.scss
+│   ├── Footer --> (renderiza el footer)
+│   │   ├── Footer.js
+│   │   └── Footer.scss
 │   ├── Header --> (renderiza el logo de la serie con una imagen de Rick y de Morty)
 │   │   ├── Header.js
 │   │   └── Header.scss
