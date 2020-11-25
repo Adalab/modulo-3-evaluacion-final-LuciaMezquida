@@ -6,6 +6,8 @@ Este proyecto es la evaluación final del módulo III de [Adalab](https://adalab
 
 Mediante el uso del servicio de https://rickandmortyapi.com/documentation/#get-all-characters que nos devuelve información sobre los primeros 20 personajes de la serie, se puede filtrar los personajes de la serie por nombre, ordenarlos en orden alfabético y ver los detalles de cada personaje, como si aún están vivos, de dónde proceden o el número de episodios en los que han aparecido.
 
+A su vez, aparecerán varios mensajes de advertencia, como cuando no hay ningún personaje que coincida con la búsqueda, cuando navega por una URL inexistente y un loader para cuando tarde en producirse la llamada al servidor api.
+
 ## Esctructura
 
 ~~~
@@ -32,6 +34,9 @@ src
 │   ├── NotFound
 │   │   ├── NotFound.js
 │   │   └── NotFound.scss
+│   ├── NotMatch
+│   │   ├── NotMatch.js
+│   │   └── NotMatch.scss
 │   └── App.js
 │
 ├── images
