@@ -30,7 +30,7 @@ const CharacterDetail = (props) => {
             className="character-detail__card--image"
           />
           <div className="character-detail__card--description">
-            <p className="character-detail__card--name">NAME: {props.name}</p>
+            <h3 className="character-detail__card--name">{props.name}</h3>
             <p className="character-detail__card--status">STATUS: {status}</p>
             <p className="character-detail__card--species">
               SPECIES: {species}
