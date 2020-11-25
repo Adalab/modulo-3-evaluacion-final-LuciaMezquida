@@ -13,7 +13,7 @@
     border-radius: 0 68px;
   }
   &__text {
-    height: 15vh;
+    height: 22vh;
     text-align: center;
     color: $color-secondary;
     display: flex;
@@ -23,6 +23,9 @@
     padding: 20px 10px;
     font-family: $font-primary;
     line-height: 20px;
+    @media all and (min-width: 768px) {
+      height: 14vh;
+    }
     &--species {
       display: flex;
       border: 2px solid $color-secondary;
