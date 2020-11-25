@@ -1,3 +1,5 @@
+![Gif](https://media.giphy.com/media/l378BzHA5FwWFXVSg/giphy.gif)
+
 # Rick & Morty Character Finder
 
 Este proyecto es la evaluación final del módulo III de [Adalab](https://adalab.es/). Se trata de un buscador de los personajes de la serie Rick y Morty desarrollado con [React](https://es.reactjs.org/) y [Sass](https://sass-lang.com/).
@@ -55,7 +57,12 @@ src
 
 ## La Web
 
+Página principal
+
 ![Landing](https://imgur.com/Ix0uNM0.png)
+
+Tarjeta detallada
+
 ![CharacterDetail](https://imgur.com/7PzrgLz.png)
 
 ## Arrancar el proyecto
