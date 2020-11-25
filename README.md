@@ -18,13 +18,13 @@ src
 │   ├── CharacterCard --> (renderiza la tarjeta de cada personaje, con su foto, nombre y especie)
 │   │   ├── CharacterCard.js
 │   │   └── CharacterCard.scss
-│   ├── CharacterDetail --> (renderiza a través de una ruta una tajeta con más detalles sobre el personaje, como el planeta, status y episodios)
+│   ├── CharacterDetail --> (renderiza a través de una ruta una tajeta con más detalles sobre el personaje)
 │   │   ├── CharacterDetail.js
 │   │   └── CharacterDetail.scss
 │   ├── CharacterList --> (renderiza el listado de tarjetas)
 │   │   ├── CharacterList.js
 │   │   └── CharacterList.scss
-│   ├── Filters --> (renderiza los campos de filtrado por nombre y el de ordenación de nombre por orden alfabético)
+│   ├── Filters --> (renderiza los campos de filtrado por nombre y el de ordenación por orden alfabético)
 │   │   ├── Filters.js
 │   │   └── Filters.scss
 │   ├── Footer --> (renderiza el footer)
@@ -39,7 +39,7 @@ src
 │   ├── NotFound --> (renderiza un mensaje de advertencia cuando se navega por route a una URL inexistente)
 │   │   ├── NotFound.js
 │   │   └── NotFound.scss
-│   ├── NotMatch --> (renderiza un mensaje cuando ningún personaje coincide con los datos introducidos en el campo de búsqueda)
+│   ├── NotMatch --> (renderiza un mensaje cuando ningún personaje coincide con los datos introducidos)
 │   │   ├── NotMatch.js
 │   │   └── NotMatch.scss
 │   └── App.js
