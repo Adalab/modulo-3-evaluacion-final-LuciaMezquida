@@ -29,6 +29,9 @@ src
 │   ├── Loader
 │   │   ├── Loader.js
 │   │   └── Loader.scss
+│   ├── NotFound
+│   │   ├── NotFound.js
+│   │   └── NotFound.scss
 │   └── App.js
 │
 ├── images
