@@ -6,9 +6,9 @@ import "./Header.scss";
 const Header = () => {
   return (
     <header className="header">
-      <img src={rick} alt="Rick" className="header__rick" />
-      <img src={logo} alt="Logo" className="header__logo" />
-      <img src={morty} alt="Morty" className="header__morty" />
+      <img src={rick} alt="Rick" className="header__rick" title="Rick" />
+      <img src={logo} alt="Logo" className="header__logo" title="Logo" />
+      <img src={morty} alt="Morty" className="header__morty" title="Morty" />
     </header>
   );
 };
