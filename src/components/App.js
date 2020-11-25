@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Route, Switch, Link } from "react-router-dom";
 import "../styleSheets/App.scss";
 import apiCall from "../services/api";
-import pickle from "../images/pickle-rick.png";
 import CharacterList from "./CharacterList/CharacterList";
 import Filters from "./Filters/Filters";
 import CharacterDetail from "./CharacterDetail/CharacterDetail";
 import Header from "./Header/Header";
 import Loader from "./Loader/Loader";
+import NotFound from "./NotFound/NotFound";
 
 const App = () => {
   const [characterData, setCharacterData] = useState([]);
@@ -68,22 +68,13 @@ const App = () => {
         />
       );
     } else {
-      return (
-        <section className="not-found">
-          <h2 className="not-found__title">Character not found</h2>
-          <Link title="Main page" className="link" to="/">
-            <span className="not-found__link">Back to finder</span>
-          </Link>
-          <img src={pickle} alt="Pickle Rick" className="not-found__image" />
-        </section>
-      );
+      return <NotFound />;
     }
   };
 
   return (
     <>
       <Header />
-
       <Switch>
         <Route exact path="/">
           <Filters

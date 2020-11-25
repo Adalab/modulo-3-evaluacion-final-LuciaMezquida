@@ -1,0 +1,48 @@
+@import "../../styleSheets/variables.scss";
+
+.link {
+  text-decoration: none;
+}
+.not-found {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    margin-top: 8%;
+    color: $color-secondary;
+    font-size: 30px;
+    font-family: $font-primary;
+    @media all and (min-width: 768px) {
+      font-size: 40px;
+    }
+    @media all and (min-width: 1024px) {
+      font-size: 50px;
+    }
+  }
+  &__link {
+    color: $color-primary;
+    font-size: 30px;
+    font-family: $font-primary;
+    &:hover {
+      text-shadow: 6px 7px 22px rgba(93, 236, 93, 0.9);
+    }
+  }
+  &__image {
+    margin-top: 50px;
+    height: 30vh;
+    animation: upDown 2s infinite;
+  }
+}
+//Animation
+@keyframes upDown {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
