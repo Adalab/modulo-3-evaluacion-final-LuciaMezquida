@@ -58,7 +58,7 @@ Para instalar el proyecto
 
 ### `npm start`
 
-Para arrancar el proyecto y probarlo en desarrollo a través de la URL http://localhost:3000/#/
+Para arrancar el proyecto y probarlo en desarrollo a través de la URL '//localhost:3000/#/'
 
 ### `npm run build`
 
