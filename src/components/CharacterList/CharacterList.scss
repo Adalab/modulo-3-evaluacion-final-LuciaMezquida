@@ -3,6 +3,7 @@
 .main {
   max-width: 90%;
   margin: auto;
+  padding-bottom: 30px;
   &__character-list {
     display: grid;
     grid-gap: 20px;
@@ -19,6 +20,23 @@
     @media all and(min-width: 1200px) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: repeat(5, 1fr);
+    }
+  }
+  &__button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    &--button {
+      background-color: $color-primary;
+      padding: 10px 30px;
+      text-decoration: none;
+      color: $color-secondary;
+      font-family: $font-primary;
+      font-size: 20px;
+      border-radius: 5px;
+      &:hover {
+        box-shadow: 1px 2px 15px 8px rgba(93, 236, 93, 0.9);
+      }
     }
   }
 }

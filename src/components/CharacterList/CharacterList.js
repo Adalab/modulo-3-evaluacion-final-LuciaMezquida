@@ -31,11 +31,17 @@ const CharacterList = (props) => {
   return (
     <main className="main">
       <ul className="main__character-list">{characterList}</ul>;
+      <div className="main__button-container">
+        <a href="#" className="main__button-container--button">
+          Up
+        </a>
+      </div>
     </main>
   );
 };
 CharacterList.propTypes = {
   characterData: PropTypes.array.isRequired,
   filterValue: PropTypes.string.isRequired,
+  isLoading: PropTypes.bool.isRequired,
 };
 export default CharacterList;
