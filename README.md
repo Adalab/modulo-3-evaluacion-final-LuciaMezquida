@@ -55,8 +55,8 @@ src
 
 ## La Web
 
-![Landing](https://imgur.com/Ix0uNM0)
-![CharacterDetail](https://imgur.com/7PzrgLz)
+![Landing](https://imgur.com/Ix0uNM0.png)
+![CharacterDetail](https://imgur.com/7PzrgLz.png)
 
 ## Arrancar el proyecto
 
