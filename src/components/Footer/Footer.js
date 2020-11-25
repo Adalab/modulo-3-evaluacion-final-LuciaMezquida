@@ -6,7 +6,7 @@ const Footer = () => {
       <small className="footer__text">
         Made with{" "}
         <span>
-          <i class="fas fa-grin-tears"></i>
+          <i className="fas fa-grin-tears"></i>
         </span>{" "}
         by Lucia Mezquida
       </small>
@@ -15,24 +15,27 @@ const Footer = () => {
         className="footer__github"
         title="GitHub"
         target="_blank"
+        rel="noreferrer"
       >
-        <i class="fab fa-github footer__github--icon"></i>
+        <i className="fab fa-github footer__github--icon"></i>
       </a>
       <a
         href="https://twitter.com/LuciCodes"
         className="footer__twitter"
         title="Twitter"
         target="_blank"
+        rel="noreferrer"
       >
-        <i class="fab fa-twitter footer__twitter--icon"></i>
+        <i className="fab fa-twitter footer__twitter--icon"></i>
       </a>
       <a
         href="https://www.linkedin.com/in/luciamezquidajuan/"
         className="footer__linkedin"
         title="Linkedin"
         target="_blank"
+        rel="noreferrer"
       >
-        <i class="fab fa-linkedin footer__linkedin--icon"></i>
+        <i className="fab fa-linkedin footer__linkedin--icon"></i>
       </a>
     </footer>
   );
