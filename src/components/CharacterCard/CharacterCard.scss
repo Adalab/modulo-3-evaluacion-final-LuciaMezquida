@@ -28,10 +28,9 @@
       height: 14vh;
     }
     &--species {
-      display: flex;
       border: 2px solid $color-secondary;
       border-radius: 20px;
-      padding: 3px 20px;
+      padding: 3px 30px 2px 10px;
     }
     &--species-icon {
       background-color: $color-primary;
