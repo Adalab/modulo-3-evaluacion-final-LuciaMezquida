@@ -3,18 +3,21 @@
   text-decoration: none;
 }
 .character-card {
-  margin: 10px;
-  width: 70%;
+  width: 300px;
+  margin: 40px 0;
   border: 3px solid $color-primary;
-  margin: auto;
   border-radius: 0 71px;
   transition: ease 1s;
+  @media all and (min-width: 768px) {
+    margin: 40px;
+  }
   &__image {
     width: 100%;
-    border-radius: 0 68px;
+    border-radius: 0 68px 0 0;
   }
   &__text {
-    height: 22vh;
+    background-color: rgb(18, 32, 7);
+    border-radius: 0 0 0 68px;
     text-align: center;
     color: $color-secondary;
     display: flex;
@@ -24,8 +27,9 @@
     padding: 20px 10px;
     font-family: $font-primary;
     line-height: 20px;
-    @media all and (min-width: 768px) {
-      height: 14vh;
+
+    &--name {
+      font-size: 18px;
     }
     &--species {
       border: 2px solid $color-secondary;

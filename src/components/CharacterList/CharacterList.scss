@@ -5,22 +5,9 @@
   margin: auto;
   padding-bottom: 30px;
   &__character-list {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(20, 1fr);
-    @media all and(min-width: 768px) {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(10, 1fr);
-    }
-    @media all and(min-width: 1024px) {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: repeat(7, 1fr);
-    }
-    @media all and(min-width: 1200px) {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: repeat(5, 1fr);
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   &__button-container {
     display: flex;
