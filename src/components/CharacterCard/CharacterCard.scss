@@ -6,6 +6,9 @@
   width: 300px;
   margin: 40px 0;
   border: 3px solid $color-primary;
+  background-color: rgb(13, 22, 6);
+  box-shadow: 0 4px 8px 0 rgba(17, 27, 15, 0.2), 0 6px, 20px,
+    0 rgba(17, 27, 25, 0.19);
   border-radius: 0 71px;
   transition: ease 1s;
   @media all and (min-width: 768px) {
@@ -16,7 +19,6 @@
     border-radius: 0 68px 0 0;
   }
   &__text {
-    background-color: rgb(18, 32, 7);
     border-radius: 0 0 0 68px;
     text-align: center;
     color: $color-secondary;
